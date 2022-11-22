@@ -1,8 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Inter", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+input {
+  font-family: 'Inter';
+  font-size: 1.1em;
+  border-radius: 8px;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #282828;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blueviolet;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: #fff;
+  border: 0px;
+  font-family: 'Inter';
+  font-weight: bold;
+  transition: background-color .2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(112, 32, 187);
+  transition: background-color .2s ease-in-out;
+}
+
+.alert {
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+  border: 1px solid rgb(255, 185, 185);
+  color: red;
+  background-color: rgb(255, 208, 208);
+  padding: 10px;
+  border-radius: 8px;
 }
